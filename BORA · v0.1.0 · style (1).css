@@ -1,0 +1,12 @@
+:root{box-sizing:border-box;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);--roxo:#1b0a3d;--marinho:#0a1236;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:#0a1236;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;font-family:'Sora',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#fff;background:#0a1236;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(160deg,var(--roxo),var(--marinho))}
+.glass{background:rgba(40,25,90,.6);border:1px solid rgba(255,255,255,.1);border-radius:1.5rem}
+@supports((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(255,255,255,.06);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}}
+.neon{background:linear-gradient(90deg,#ff2d95,#ff8a3d 55%,#b388ff);color:#fff}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+input:not([type=checkbox]):not([type=range]),select,textarea{font-size:16px!important;-webkit-appearance:none;appearance:none}
+input[type=checkbox]{width:22px;height:22px;flex:none}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ff8a3d;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
